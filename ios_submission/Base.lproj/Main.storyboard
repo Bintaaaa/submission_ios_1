@@ -32,11 +32,66 @@
                     </view>
                     <connections>
                         <outlet property="corporateTableView" destination="5Mf-Db-BB5" id="SlZ-yg-tdG"/>
+                        <segue destination="pvd-TF-1mn" kind="show" identifier="MoveToDetail" id="0BV-PV-apn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20" y="94"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="e6T-wO-Ra5">
+            <objects>
+                <viewController id="pvd-TF-1mn" customClass="DetailViewController" customModule="ios_submission" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a48-30-6lT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qi8-8r-ZFe">
+                                <rect key="frame" x="107" y="68" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="PEy-bQ-6rX"/>
+                                    <constraint firstAttribute="width" constant="200" id="RHQ-Vc-jhg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhX-ze-vWY">
+                                <rect key="frame" x="12" y="280" width="390" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iox-dq-4oy">
+                                <rect key="frame" x="12" y="316" width="390" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Cpt-pQ-eBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KhX-ze-vWY" firstAttribute="leading" secondItem="Cpt-pQ-eBY" secondAttribute="leading" constant="12" id="94n-hJ-8Qc"/>
+                            <constraint firstItem="Cpt-pQ-eBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iox-dq-4oy" secondAttribute="bottom" constant="12" id="HFC-cf-seg"/>
+                            <constraint firstItem="KhX-ze-vWY" firstAttribute="top" secondItem="Qi8-8r-ZFe" secondAttribute="bottom" constant="12" id="IiN-Xb-mZ0"/>
+                            <constraint firstItem="iox-dq-4oy" firstAttribute="top" secondItem="KhX-ze-vWY" secondAttribute="bottom" constant="12" id="L9g-dh-9gh"/>
+                            <constraint firstItem="Cpt-pQ-eBY" firstAttribute="trailing" secondItem="KhX-ze-vWY" secondAttribute="trailing" constant="12" id="NDh-x2-U4Z"/>
+                            <constraint firstItem="iox-dq-4oy" firstAttribute="leading" secondItem="Cpt-pQ-eBY" secondAttribute="leading" constant="12" id="PrF-gQ-elA"/>
+                            <constraint firstItem="Qi8-8r-ZFe" firstAttribute="centerX" secondItem="Cpt-pQ-eBY" secondAttribute="centerX" id="R04-XK-QcR"/>
+                            <constraint firstItem="iox-dq-4oy" firstAttribute="top" secondItem="KhX-ze-vWY" secondAttribute="bottom" constant="12" id="glA-p7-rQW"/>
+                            <constraint firstItem="Cpt-pQ-eBY" firstAttribute="trailing" secondItem="iox-dq-4oy" secondAttribute="trailing" constant="12" id="qrv-l1-GKR"/>
+                            <constraint firstItem="Qi8-8r-ZFe" firstAttribute="top" secondItem="Cpt-pQ-eBY" secondAttribute="top" constant="24" id="zIK-8F-Dwv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gzt-Ti-9nN"/>
+                    <connections>
+                        <outlet property="corporateDetailImage" destination="Qi8-8r-ZFe" id="fNa-Ah-Gpr"/>
+                        <outlet property="descDetailCorporate" destination="iox-dq-4oy" id="0e1-yi-aEj"/>
+                        <outlet property="titleDetailCorporate" destination="KhX-ze-vWY" id="eYn-lg-aXv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V3N-zV-YCb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="936" y="94"/>
         </scene>
     </scenes>
     <resources>

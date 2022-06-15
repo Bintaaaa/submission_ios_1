@@ -17,28 +17,29 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Y7-Yy-ErD">
-                        <rect key="frame" x="4" y="4" width="100" height="100"/>
+                        <rect key="frame" x="8" y="8" width="100" height="100"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="100" id="Aao-6K-p5a"/>
-                            <constraint firstAttribute="width" constant="100" id="cmZ-4e-J6D"/>
+                            <constraint firstAttribute="height" constant="100" id="IH2-yf-esD"/>
+                            <constraint firstAttribute="width" constant="100" id="g2T-9E-ipR"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T21-88-vMN">
-                        <rect key="frame" x="112" y="46" width="49" height="24"/>
+                        <rect key="frame" x="116" y="8" width="49" height="100"/>
                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="4Y7-Yy-ErD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="8jO-6G-cba"/>
-                    <constraint firstItem="T21-88-vMN" firstAttribute="leading" secondItem="4Y7-Yy-ErD" secondAttribute="trailing" constant="8" id="9Ee-vD-2BB"/>
-                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="T21-88-vMN" secondAttribute="trailing" constant="149" id="Ca9-Ek-iFG"/>
-                    <constraint firstAttribute="bottom" secondItem="T21-88-vMN" secondAttribute="bottom" constant="46" id="KPf-H2-Bto"/>
-                    <constraint firstItem="T21-88-vMN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="May-mx-zxA"/>
-                    <constraint firstAttribute="bottom" secondItem="4Y7-Yy-ErD" secondAttribute="bottom" constant="4" id="UZI-gi-q0E"/>
-                    <constraint firstItem="4Y7-Yy-ErD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="WuV-D1-rX9"/>
-                    <constraint firstItem="T21-88-vMN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="46" id="YuG-Lg-ji7"/>
+                    <constraint firstAttribute="bottom" secondItem="4Y7-Yy-ErD" secondAttribute="bottom" constant="8" id="6VW-u3-I3V"/>
+                    <constraint firstItem="T21-88-vMN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ANF-3x-UoM"/>
+                    <constraint firstItem="4Y7-Yy-ErD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="EkT-AJ-bsa"/>
+                    <constraint firstItem="T21-88-vMN" firstAttribute="leading" secondItem="4Y7-Yy-ErD" secondAttribute="trailing" constant="8" id="IQl-pg-GX8"/>
+                    <constraint firstAttribute="bottom" secondItem="T21-88-vMN" secondAttribute="bottom" constant="8" id="Jpn-eW-ynO"/>
+                    <constraint firstItem="T21-88-vMN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="YdI-Xw-aC4"/>
+                    <constraint firstItem="T21-88-vMN" firstAttribute="leading" secondItem="4Y7-Yy-ErD" secondAttribute="trailing" constant="8" id="fXV-zl-aEj"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="T21-88-vMN" secondAttribute="trailing" constant="8" id="w8n-5q-G3r"/>
+                    <constraint firstItem="4Y7-Yy-ErD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="wPY-0X-JqG"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -46,7 +47,7 @@
                 <outlet property="corporateImage" destination="4Y7-Yy-ErD" id="34f-Hu-xep"/>
                 <outlet property="corporateLabel" destination="T21-88-vMN" id="zX4-yN-pAa"/>
             </connections>
-            <point key="canvasLocation" x="137.68115942028987" y="85.714285714285708"/>
+            <point key="canvasLocation" x="28" y="72"/>
         </tableViewCell>
     </objects>
 </document>

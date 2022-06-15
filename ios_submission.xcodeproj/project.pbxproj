@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78017E352859B6C900943BC1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78017E342859B6C900943BC1 /* DetailViewController.swift */; };
 		78904B6D28598D4E00F7E84D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78904B6C28598D4E00F7E84D /* AppDelegate.swift */; };
 		78904B6F28598D4E00F7E84D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78904B6E28598D4E00F7E84D /* SceneDelegate.swift */; };
 		78904B7128598D4E00F7E84D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78904B7028598D4E00F7E84D /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		78017E342859B6C900943BC1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		78904B6928598D4E00F7E84D /* ios_submission.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_submission.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78904B6C28598D4E00F7E84D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78904B6E28598D4E00F7E84D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				78904B8028598D9D00F7E84D /* CorporateTechModel.swift */,
 				78904B8228598F7100F7E84D /* CorporateTableViewCell.swift */,
 				78904B8328598F7100F7E84D /* CorporateTableViewCell.xib */,
+				78017E342859B6C900943BC1 /* DetailViewController.swift */,
 			);
 			path = ios_submission;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				78904B7128598D4E00F7E84D /* ViewController.swift in Sources */,
 				78904B6D28598D4E00F7E84D /* AppDelegate.swift in Sources */,
 				78904B6F28598D4E00F7E84D /* SceneDelegate.swift in Sources */,
+				78017E352859B6C900943BC1 /* DetailViewController.swift in Sources */,
 				78904B8428598F7100F7E84D /* CorporateTableViewCell.swift in Sources */,
 				78904B8128598D9D00F7E84D /* CorporateTechModel.swift in Sources */,
 			);

@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         corporateTableView.dataSource = self
+        corporateTableView.delegate = self
         corporateTableView.register(UINib(nibName: "CorporateTableViewCell", bundle: nil), forCellReuseIdentifier: "CorporateCell")
     }
 
@@ -35,6 +36,23 @@ extension ViewController: UITableViewDataSource{
             return UITableViewCell()
         }
     }
-    
-    
+}
+
+extension ViewController: UITableViewDelegate {
+  func tableView(
+    _ tableView: UITableView,
+    didSelectRowAt indexPath: IndexPath
+  ) {
+      performSegue(withIdentifier: "MoveToDetail", sender: dataCorporate[indexPath.row])
+  }
+  override func prepare(
+    for segue: UIStoryboardSegue,
+    sender: Any?
+  ) {
+    if segue.identifier == "MoveToDetail" {
+      if let detaiViewController = segue.destination as? DetailViewController {
+          detaiViewController.dataCorporate = sender as? CorporateTechModel
+      }
+    }
+  }
 }
